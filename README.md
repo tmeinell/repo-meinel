@@ -3,7 +3,7 @@
 
 
 
-# DESAFIO TÉCNICO DE BACKEND - [MUXI](http://www.muxi.com.br/portugues/)
+# DESAFIO BACKEND JAVA - [MUXI](http://www.muxi.com.br/portugues/)
 Desafios de back-end no processo seletivo de Muxi. O desafio é construir uma API REST para inserir operações CRUD em entidades chamadas "terminais". 
 
 ## TÉCNOLOGIAS ESCOLHIDAS
