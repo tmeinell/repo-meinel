@@ -100,7 +100,7 @@ public class TerminalService {
      * @param logic
      * @return terminal
      */
-    public TerminalModel findAllById(int logic) {
+    public TerminalModel findById(int logic) {
         return terminalRepository.findById(logic);
     }
 

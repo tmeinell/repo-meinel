@@ -38,7 +38,7 @@ public class TerminalResource {
     @GetMapping(value = {"/terminais/{logic}"}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ApiOperation(Constants.API_GET)
     public @ResponseBody ResponseEntity<?> findAllByLogic(@PathVariable("logic") int logic) {
-        return ResponseEntityUtil.defaultResponse(terminalService.findAllById(logic), false);
+        return ResponseEntityUtil.defaultResponse(terminalService.findById(logic), false);
     }
 
     @PutMapping(value = {"/terminais/{logic}"}, consumes = {MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
