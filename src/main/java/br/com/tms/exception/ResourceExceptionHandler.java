@@ -1,9 +1,9 @@
 package br.com.tms.exception;
 
 import br.com.tms.service.exception.DataIntegrityException;
+import br.com.tms.service.exception.ObjectNotFoundException;
 import javax.servlet.http.HttpServletRequest;
-import org.aspectj.apache.bcel.classfile.Constant;
-import org.hibernate.ObjectNotFoundException;
+
 import br.com.tms.util.Constants;
 
 import org.springframework.http.HttpStatus;
