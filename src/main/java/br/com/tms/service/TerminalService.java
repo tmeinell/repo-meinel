@@ -18,12 +18,15 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.regex.PatternSyntaxException;
 import org.json.JSONException;
 import org.json.JSONTokener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 public class TerminalService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(TerminalService.class);
 
     @Autowired
     TerminalRepository terminalRepository;
@@ -85,6 +88,8 @@ public class TerminalService {
             }
 
         } catch (IOException | JSONException | NumberFormatException e) {
+            LOG.error("ERRO: ", e);
+            LOG.error(e.toString());
             throw new DataIntegrityException(Constants.INVALID_PAYLOAD);
         }
     }
@@ -127,6 +132,8 @@ public class TerminalService {
                 throw new DataIntegrityException(Constants.INVALID_JSON_SCHEMA);
             }
         } catch (JsonProcessingException e) {
+            LOG.error("ERRO: ", e);
+            LOG.error(e.toString());
             throw new DataIntegrityException(Constants.PARSE_ERROR);
         }
     }

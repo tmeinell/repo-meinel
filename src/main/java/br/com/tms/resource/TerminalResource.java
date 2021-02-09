@@ -1,7 +1,6 @@
 package br.com.tms.resource;
 
 import br.com.tms.controller.domain.model.TerminalModel;
-import br.com.tms.service.exception.DataIntegrityException;
 import br.com.tms.service.TerminalService;
 import br.com.tms.util.Constants;
 import br.com.tms.util.ResponseEntityUtil;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 @RestController
