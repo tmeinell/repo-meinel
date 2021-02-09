@@ -75,7 +75,7 @@ public class TerminalApplicationTests {
 
     @Test
     public void testGetTerminalSucess() {
-        when(this.terminalService.findById(49673917)).thenReturn(new TerminalModel());
+        when(this.terminalService.findByLogincId(49673917)).thenReturn(new TerminalModel());
 
         given().contentType(ContentType.JSON)
                 .when().get("/terminais")
@@ -84,7 +84,7 @@ public class TerminalApplicationTests {
 
     @Test
     public void testGetTerminalNotFound() {
-        when(this.terminalService.findById(1)).thenReturn(null);
+        when(this.terminalService.findByLogincId(1)).thenReturn(null);
 
         given().contentType(ContentType.JSON)
                 .when().get("/terminais")

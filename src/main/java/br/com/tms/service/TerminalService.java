@@ -100,8 +100,8 @@ public class TerminalService {
      * @param logic
      * @return terminal
      */
-    public TerminalModel findById(int logic) {
-        return terminalRepository.findById(logic);
+    public TerminalModel findByLogincId(int logic) {
+        return terminalRepository.findByLogincId(logic);
     }
 
     /**
@@ -112,7 +112,7 @@ public class TerminalService {
      */
     public TerminalModel update(TerminalModel terminalModel, int logic) {
 
-        TerminalModel terminalmodel = terminalRepository.findById(logic);
+        TerminalModel terminalmodel = terminalRepository.findByLogincId(logic);
 
         if (terminalmodel == null) {
             throw new DataIntegrityException(Constants.ENTITY_NOT_FOUND);
