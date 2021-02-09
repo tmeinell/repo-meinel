@@ -40,14 +40,14 @@ Exemplo de endpoint que retorna uma lista de entidades com paginação: [LINK](h
 `https://apimuxi.herokuapp.com/rest/api/v1/terminal?page=0&size=2`
 
 **GET**
-Exemplo de endpoint utilizando o verbo GET, que retorna uma entidade atraves do atributo/{logic}: [LINK](https://apimuxi.herokuapp.com/rest/api/v1/terminais/66662211)
+Exemplo de endpoint utilizando o verbo GET, que retorna uma entidade atraves do atributo/{logic}: [LINK](https://apimuxi.herokuapp.com/rest/api/v1/terminais/49673917)
 
-`https://apimuxi.herokuapp.com/rest/api/v1/terminais/66662211`
+`https://apimuxi.herokuapp.com/rest/api/v1/terminais/49673917`
 
 **PUT**
 Exemplo de endpoint que atualiza uma entidade pelo atributo/{logic}:
 
-`https://apimuxi.herokuapp.com/rest/api/v1/terminais/66662211`
+`https://apimuxi.herokuapp.com/rest/api/v1/terminais/49673917`
 
 **POST**
 Exemplo de endpoint que cria uma entidade:
