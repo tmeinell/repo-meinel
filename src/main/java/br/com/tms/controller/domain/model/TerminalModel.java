@@ -15,8 +15,6 @@ import org.hibernate.annotations.GenericGenerator;
 public class TerminalModel implements Serializable {
 
     @Id
-    @GeneratedValue(generator = "increment")
-    @GenericGenerator(name="increment", strategy = "increment")
     @JsonProperty("logic")
     @Column(updatable = false)
     private int logic;
